@@ -1,0 +1,1 @@
+Currently I'm using [iTerm](https://iterm2.com/index.html)
