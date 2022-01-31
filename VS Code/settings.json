@@ -1,0 +1,48 @@
+{
+  "explorer.confirmDragAndDrop": false,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 15,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "color-highlight.markerType": "dot-before",
+  "prettier.tabWidth": 4,
+  "C_Cpp.updateChannel": "Insiders",
+  "python.formatting.provider": "black",
+  "git.autofetch": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "python.languageServer": "Pylance",
+  "python.pythonPath": "/usr/bin/python3",
+  "git.confirmSync": false,
+  "search.exclude": {
+    "**/android": true,
+    "**/ios": true
+  },
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.tabSize": 2,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "workbench.colorTheme": "Default Dark+",
+  "window.zoomLevel": 1,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false
+}
