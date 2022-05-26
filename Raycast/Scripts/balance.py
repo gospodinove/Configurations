@@ -25,11 +25,42 @@
 # @raycast.authorURL https://www.github.com/gospodinove
 
 import sys
+import json
+from spendee import Spendee
+
+
+def format(number):
+    return "BGN {:.2f}".format(number)
+
 
 cash = float(sys.argv[1])
 revolut = float(sys.argv[2])
 bank = float(sys.argv[3])
 
-# TODO: Figure out how to get the target from Spendee
+balance = cash + revolut + bank
 
-print("Your balance is: {:.2f} BGN".format(cash + revolut + bank))
+# file look-up starts at ~ (see line 19)
+credentials_file = open(
+    "Projects/Configurations/Raycast/Scripts/balance-credentials.json"
+)
+credentials = json.load(credentials_file)
+credentials_file.close()
+
+spendee = Spendee(email=credentials["email"], password=credentials["password"])
+
+wallets = spendee.wallet_get_all()
+
+target = None
+
+for wallet in wallets:
+    if wallet["name"] == "Main":
+        target = round(wallet["balance"], 2)
+
+if target == None:
+    print(f"No target. Your balance is {format(balance)}.")
+elif target > balance:
+    print(f"Track those {format(target - balance)}!")
+elif target < balance:
+    print(f"You are {format(balance - target)} in the clear!")
+else:
+    print("You are spot on!")
