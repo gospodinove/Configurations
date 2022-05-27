@@ -108,7 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="~/Projects/Executables:$PATH"
 
 # Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
