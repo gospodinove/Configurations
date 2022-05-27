@@ -8,7 +8,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Balance
-# @raycast.mode compact
+# @raycast.mode fullOutput
 # @raycast.packageName Raycast Scripts
 # @raycast.argument1 { "type": "text", "placeholder": "Cash", "optional": false }
 # @raycast.argument2 { "type": "text", "placeholder": "Revolut", "optional": false }
@@ -55,6 +55,7 @@ target = None
 for wallet in wallets:
     if wallet["name"] == "Main":
         target = round(wallet["balance"], 2)
+        break
 
 if target == None:
     print(f"No target. Your balance is {format(balance)}.")
