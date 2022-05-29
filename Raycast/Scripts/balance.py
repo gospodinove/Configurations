@@ -54,7 +54,8 @@ target = None
 
 for wallet in wallets:
     if wallet["name"] == "Main":
-        target = round(wallet["balance"], 2)
+        # for some reason, there is a deficit of 2 in the wallet's balance
+        target = round(wallet["balance"] + 2, 2)
         break
 
 if target == None:
