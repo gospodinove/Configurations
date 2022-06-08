@@ -2,9 +2,11 @@
 
 Storage for config back-ups and custom scripts
 
+## Balance
+
 In order to use the `balance` script, you need to do two things:
 
-1. Provide a JSON file containing your Spendee credentials:
+1. Provide a JSON file calles `balance-credentials.json` containing your Spendee credentials:
 
 ```JSON
 {
@@ -17,4 +19,21 @@ In order to use the `balance` script, you need to do two things:
 
 ```Bash
 pip install spendee
+```
+
+## Shell back up
+
+In order to install the backed up data:
+
+-   Brew
+
+```Bash
+brew bundle install --file=[path/to/backup]
+
+```
+
+-   Node
+
+```Bash
+xargs npm install --global < [path/to/backup]
 ```
