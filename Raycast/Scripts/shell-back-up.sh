@@ -17,4 +17,12 @@ brew bundle dump --file=~/Projects/Configurations/Brewfile --force
 
 npm list --global --parseable --depth=0 | sed '1d' | awk '{gsub(/\/.*\//,"",$1); print}' > ~/Projects/Configurations/NodeJS/global-modules.txt
 
-echo "Backed up!"
+cd /Users/gospodinove/Projects/Configurations
+
+git add .
+
+git commit -am "Brew & NodeJS"
+
+git push
+
+echo "Backed up to GitHub!"
