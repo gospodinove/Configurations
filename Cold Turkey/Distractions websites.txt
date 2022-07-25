@@ -2,8 +2,9 @@
 9gag.com
 badoo.com
 buzzfeed.com
+disneyplus.com
 facebook.com
-hbomax.com
+imdb.com
 imgur.com
 instagram.com
 letterboxd.com
@@ -12,6 +13,7 @@ mashable.com
 myspace.com
 netflix.com
 pinterest.com
+play.hbomax.com
 qzone.qq.com
 reddit.com
 skype.com
