@@ -33,7 +33,20 @@ def get_last_team_game_date_localized(team_id):
   game_date = get_last_team_game_date(team_id)
   return localize_date(game_date)
 
+def is_today(date):
+  return date.date() == datetime.datetime.today().date()
+
+def is_yesterday(date):
+  yesterday = datetime.datetime.today() - datetime.timedelta(days = 1)
+  return date.date() == yesterday.date()
+
 def format_date(date):
+  if (is_today(date)):
+    return 'Today'
+
+  if (is_yesterday(date)):
+    return 'Yesterday'
+
   return date.strftime("%d %b")
 
 favorite_teams = ['GSW', 'BKN', 'MEM']
