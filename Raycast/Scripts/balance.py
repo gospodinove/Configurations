@@ -61,8 +61,8 @@ for wallet in wallets:
 if target == None:
     print(f"No target. Your balance is {format(balance)}.")
 elif target > balance:
-    print(f"Track those {format(target - balance)}!")
+    print(f"‼️ Track those {format(target - balance)}!")
 elif target < balance:
-    print(f"You are {format(balance - target)} in the clear!")
+    print(f"✅ You are {format(balance - target)} in the clear!")
 else:
-    print("You are spot on!")
+    print("✅ You are spot on!")
